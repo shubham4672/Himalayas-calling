@@ -4,8 +4,6 @@
 
 -> Payment Gateway
 
--> ADD SMS Notification APIs (e.g., Twilio)
-
--> Google Maps API on the Contact Us page
+-> ADD Email Notification APIs (e.g., Twilio)         --> Almost done
 
 -> Add login/signup page authentication using sessions
