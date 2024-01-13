@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(Images/background.jpg);
+    background-position:1px 900px;    /*width and height*/
+    background-size:cover;
+    background-attachment:fixed;
+   
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.nav-links{
+  text-align:center}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.dropdown {
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content: center;
+    margin-left:180px;
+  }
+/*redline under nav links*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 75%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+    padding: 10px;
+}
+.text-box h2{
+    font-size: 20px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+}
+
+
+/*----------rentals---------*/
+.rental{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+
+    display: flex;
+    justify-content: space-between;
+}
+.rental-col{
+    flex-basis: 31%;
+    background: #ffefef;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: centre;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.rental-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+/*---------------------services---------------------*/
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.services-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.services-col h3{
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+.services-col p{
+    text-align: left;
+    padding: 0;
+}
+.services-col img{
+    width: 100%;
+    height: 50%;
+    display: block;
+    border-radius: 10px;
+}
+/* Reviews*/
+a{
+    text-decoration: none;
+}
+#testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.testimonial-box{
+    width:400px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+    .testimonial-box{
+        width:45%;
+        padding: 10px;
+    }
+}
+@media(max-width:790px){
+    .testimonial-box{
+        width:100%;
+    }
+    .testimonial-heading h1{
+        font-size: 1.4rem;
+    }
+}
+@media(max-width:340px){
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+::selection{
+    color: #ffffff;
+    background-color: #252525;
+}
+
+/*---------------------contact-us---------------------*/
+.contact-us{
+    margin: 100px auto;
+    width: 80%;
+    background-image:url(images/cnn.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact-us h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .contact-us h1{
+        font-size: 20px;
+    }
+}
+
+
+
+/* footer section starts from here */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:white;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 50px;
+    color: #fff;
+}
+.footer-content{
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h9{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    color:white;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+/*---------------------Responsive---------------------------*/
+@media screen and (max-width:1280px){
+.header1{
+    padding:10px 2%;
+    transition:.2s;
+
+}
+
+  #navLinks a{ 
+      padding: 5px 0;
+      margin:0px 20px;
+  }
+}
+
+@media  (max-width: 1090px){
+#menu-icon{
+    display: block;
+
+}
+
+.navbar{
+    position: absolute;
+    top:100%;
+    right: 2%;
+    width: 270px;
+    height: 29vh;
+    background-color: white;
+}
+
+    
+}

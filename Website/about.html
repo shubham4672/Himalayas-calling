@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Himalayan Calling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+     <!--favicon icon-->
+     <link rel="apple-touch-icon" sizes="180x180" href="Images/main/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="Images/main/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="Images/main/favicon-16x16.png">
+     <link rel="manifest" href="Images/main/site.webmanifest">
+     <meta name="msapplication-TileColor" content="#da532c">
+     <meta name="theme-color" content="#ffffff">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header4">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="trip.html">TRIPS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN/SINGUP</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+<!----------------------About Us---------------------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We Are One Of The Best Bike/Car Rental Service Provider</h1>
+            <p><br>Our bussiness started out small but now we successfully run a bike/car rental service. There aren't many people out there who provide as many services as we do. We have a huge range of bikes and cars to offer so there is a huge variety to choose from.<br>Not only do we provide Bike and Car service, we also take care of the equipment or the accessory needs required while hiking or camping or long trips.</p>
+            <h3>Explore more about us by watching our Vlogs on Youtube.</h3>
+            <a href="https://www.youtube.com/channel/UCWo6PUHeybXN5sD6ahdJSgg" target="_blank" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="WhatsApp Image 2023-08-28 at 1.34.35 AM.jpeg">
+        </div>
+    </div>
+</section>
+
+
+<!----------------------Footer---------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Himalayan Calling - Bike, Cars & Equipment Rentals<br></p>
+    <div class="icons">
+        <a href="https://www.facebook.com/thakurhannisingh" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/thakurhanni/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCWo6PUHeybXN5sD6ahdJSgg" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p>Made with  <i class="fa fa-heart-o"></i>  by Chirag Hardik Shubham</p>
+</section>
+
+
+<!-----------JavaScript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

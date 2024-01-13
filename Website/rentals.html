@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Himalayan Calling</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--favicon icon-->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="Images/main/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="Images/main/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="Images/main/favicon-16x16.png"> -->
+    <link rel="manifest" href="Images/main/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="header2">
+      <nav>
+        <a href="index.html"><img src="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="rentals.html">RENTALS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="trip.html">TRIPS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN/SINGUP</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Rentals</h1>
+    </section>
+
+    <!----------------------Rental Page---------------------->
+    <section class="rental">
+      <h1>Rentals We Offer</h1>
+      <p>Himalayan Calling provides you with many services like -</p>
+      <div class="row">
+        <div class="rental-col">
+          <h3>Bikes On Rent</h3>
+          <p>
+            We Provide top quality bikes for our customers. We have a variety of
+            bikes including Royal Enfield Himalayan 420, Royal Enfield Classic
+            350, Duke 250 and many more. These bikes are the pride of our whole
+            bussiness.
+          </p>
+        </div>
+        <div class="rental-col">
+          <h3>Cars On Rent</h3>
+          <p>
+            Car rentals incude Maruti Suzuki Alto LXI, Maruti 800, Maruti Gypsy
+            1400, and many more. All these cars are in best conditions.<br />Ride
+            with comfort, these cars will never let you down.
+          </p>
+        </div>
+        <div class="rental-col">
+          <h3>Equipments On Rent</h3>
+          <p>
+            Need to go on a hiking trip?? <br />Or a Camping trip?? <br />But
+            you dont have the necessary equipments and accessories?? <br />Well
+            fear not, because we provide them all here at very reasonale prices.
+          </p>
+        </div>
+      </div>
+      <h4>
+        For More Insight on our Rentals, Visit the
+        <a href="gallery.html" style="color: #f44336">GALLERY</a> page.
+      </h4>
+    </section>
+
+    <!--------------------Services-------------------->
+    <section class="services">
+      <h1>Other Services</h1>
+      <p>
+        Apart from renting Bikes, Cars and Equipments, there are other services
+        also that Himalayan Calling Provides.
+      </p>
+      <div class="row">
+        <div class="services-col">
+          <img src="images/24.jpg" />
+          <h3>24/7 Availability</h3>
+          <p>
+            The Himalayan Calling provides 24/7 support.<br />You can contact us
+            any time. We will always help you with your queries and our agents
+            will always be ready to provide the best support.
+          </p>
+        </div>
+        <div class="services-col">
+          <img src="images/camping.jpg" />
+          <h3>Trips & Tours</h3>
+          <p>
+            Occasionally, we hold special events which includes Trips and Tours
+            to many famous places.<br />Do keep an eye on such events since
+            there's always a limited time Discount available.
+          </p>
+        </div>
+        <div class="services-col">
+          <img src="images/cars.jpg" />
+          <h3>Resonable Prices</h3>
+          <p>
+            The prices of all our rentals are quite resonable. They are all very
+            well calculated by our best agents so that we can provide the best
+            of best service to our customers at very low prices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------Footer---------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Himalayan Calling - Bike, Cars & Equipment Rentals<br /></p>
+      <div class="icons">
+        <a href="https://www.facebook.com/thakurhannisingh" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/thakurhanni/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCWo6PUHeybXN5sD6ahdJSgg"
+          target="_blank"
+          ><i class="fa fa-youtube"></i
+        ></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Chirag Hardik Shubham</p>
+    </section>
+
+    <!-----------JavaScript for Toggle Menu---------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
