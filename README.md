@@ -4,6 +4,6 @@
 
 -> Payment Gateway
 
--> ADD Email Notification APIs (e.g., Twilio)         --> Almost done
+-> ADD Email Notification APIs (Web3 form API)         --> Almost done
 
 -> Add login/signup page authentication using sessions
