@@ -35,7 +35,7 @@ app.post("/signup", async (req, res) => {
     res.send("User already exits. Please choose a different account.");
   } else {
     // hash the password
-    const saltRounds = 10; // Number of salt rounds for bcrypt
+    const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(data.password, saltRounds);
 
     data.password = hashedPassword; // Replace the original password with the hashed one
