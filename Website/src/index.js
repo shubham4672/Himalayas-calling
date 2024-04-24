@@ -10,6 +10,9 @@ app.use(express.json());
 // static file
 app.use(express.static("public"));
 
+// Set the views directory
+app.set("views", path.join(__dirname, "../views"));
+
 app.use(express.urlencoded({ extended: false }));
 //use EJS as the view engine
 app.set("view engine", "ejs");
@@ -22,7 +25,7 @@ app.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-// Register User
+// Register User req handler
 app.post("/signup", async (req, res) => {
   const data = {
     email: req.body.email,
